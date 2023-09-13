@@ -1,0 +1,5 @@
+<map id="drawWin" name="drawWin">
+<area shape="rect" id="node1" title="Draws &quot;WIN&quot; word when the game ends." alt="" coords="308,5,379,32"/>
+<area shape="rect" id="node2" href="$menu__view_8c.html#a4d217b918b2c2196245a9202e7faffaa" title="Draws win menu (&quot;Win&quot;, &quot;score&quot; and the points) when the the user win." alt="" coords="162,5,260,32"/>
+<area shape="rect" id="node3" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,114,32"/>
+</map>

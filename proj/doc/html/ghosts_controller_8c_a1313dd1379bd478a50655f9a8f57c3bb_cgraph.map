@@ -1,0 +1,5 @@
+<map id="ghostStrategy1" name="ghostStrategy1">
+<area shape="rect" id="node1" title="Strategy for second ghost: Move to a position behind Pacman." alt="" coords="5,5,115,32"/>
+<area shape="rect" id="node2" href="$ghosts_controller_8c.html#ac3330909b367700a0ecd05296a3ea0e2" title="Tries to move ghost to a given position." alt="" coords="163,5,239,32"/>
+<area shape="rect" id="node3" href="$collisions_controller_8c.html#aba313df502b37b3f981ceead05414953" title="Checks if a given ghost collides with the pacman." alt="" coords="287,5,461,32"/>
+</map>

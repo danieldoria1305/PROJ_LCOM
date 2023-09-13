@@ -1,0 +1,5 @@
+<map id="eraseGhosts" name="eraseGhosts">
+<area shape="rect" id="node1" title="Draws a black rectangle over each ghost." alt="" coords="5,5,101,32"/>
+<area shape="rect" id="node2" href="$graphics_8c.html#a4a4da84a32858d16b1ed46cb39579e7d" title="Draws a rectangle." alt="" coords="149,5,257,32"/>
+<area shape="rect" id="node3" href="$graphics_8c.html#a2b65762e404f315db91ba476fc300cc8" title="Draws a horizontal line." alt="" coords="305,5,443,32"/>
+</map>

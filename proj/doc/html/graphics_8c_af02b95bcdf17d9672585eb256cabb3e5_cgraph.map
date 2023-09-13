@@ -1,0 +1,5 @@
+<map id="graphics_init" name="graphics_init">
+<area shape="rect" id="node1" title="Initializes the graphics mode." alt="" coords="5,31,100,57"/>
+<area shape="rect" id="node2" href="$graphics_8c.html#aa2be5cd887153a5186e427d0aa02f59d" title="Initializes the graphics mode." alt="" coords="148,5,311,32"/>
+<area shape="rect" id="node3" href="$graphics_8c.html#a78d147fc7fb3c4f1a4b9dcf8c585b032" title="Maps the VRAM." alt="" coords="189,56,270,83"/>
+</map>

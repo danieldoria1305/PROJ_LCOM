@@ -1,0 +1,5 @@
+<map id="getNumPM" name="getNumPM">
+<area shape="rect" id="node1" title="Gets the xpm of the number passed as argument." alt="" coords="320,5,406,32"/>
+<area shape="rect" id="node2" href="$timer_view_8c.html#a6d8aab58a293e380a03e2c9841b06534" title="Draws the timer." alt="" coords="192,5,272,32"/>
+<area shape="rect" id="node3" href="$pixmaps_8c.html#a5f9261640c49a86b8911a94aebd5f10c" title="Draws all the game elements." alt="" coords="5,5,144,32"/>
+</map>

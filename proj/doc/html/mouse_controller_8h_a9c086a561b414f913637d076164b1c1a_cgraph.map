@@ -1,0 +1,5 @@
+<map id="clickPlay" name="clickPlay">
+<area shape="rect" id="node1" title="Checks if there&#39;s a mouse click over the play option and if so, display the corresponding result." alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node2" href="$menu__view_8c.html#a042e8a3267426829b46c6fed072f0116" title="Draws &quot;PLAY&quot; option in the initial game menu." alt="" coords="128,5,202,32"/>
+<area shape="rect" id="node3" href="$graphics_8c.html#aed4db1962e2d6dfa0a4a2c72b06ea949" title="Draws a XPM." alt="" coords="250,5,330,32"/>
+</map>

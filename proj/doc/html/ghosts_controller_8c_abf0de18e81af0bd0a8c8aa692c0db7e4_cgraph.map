@@ -1,0 +1,4 @@
+<map id="ghostCollidesWithPacman" name="ghostCollidesWithPacman">
+<area shape="rect" id="node1" title="Checks if a given ghost collides with the pacman." alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node2" href="$collisions_controller_8c.html#a43e0866ef25b61f619dadf131b9a5c61" title="Checks if there was a collision between two objects." alt="" coords="228,5,333,32"/>
+</map>

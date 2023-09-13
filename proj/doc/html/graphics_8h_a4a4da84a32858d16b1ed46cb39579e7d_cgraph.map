@@ -1,0 +1,5 @@
+<map id="draw_rectangle" name="draw_rectangle">
+<area shape="rect" id="node1" title="Draws a rectangle." alt="" coords="5,5,114,32"/>
+<area shape="rect" id="node2" href="$graphics_8c.html#a2b65762e404f315db91ba476fc300cc8" title="Draws a horizontal line." alt="" coords="162,5,300,32"/>
+<area shape="rect" id="node3" href="$graphics_8c.html#a59d8c6a919eef84d238f6c8d5bd66ff8" title="Draws a pixel." alt="" coords="348,5,430,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="rtc_is_binary" name="rtc_is_binary">
+<area shape="rect" id="node1" title="Checks if the RTC is in binary mode." alt="" coords="5,5,101,32"/>
+<area shape="rect" id="node2" href="$rtc_8c.html#a8e4030507a3afad53e5b80851f90d193" title="Sends a command to the RTC and retrieves the output value." alt="" coords="149,5,228,32"/>
+<area shape="rect" id="node3" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="Invokes sys_inb() system call but reads the value into a uint8_t variable." alt="" coords="276,5,366,32"/>
+</map>

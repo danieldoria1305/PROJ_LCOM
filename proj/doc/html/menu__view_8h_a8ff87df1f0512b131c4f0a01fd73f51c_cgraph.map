@@ -1,0 +1,5 @@
+<map id="eraseMenu" name="eraseMenu">
+<area shape="rect" id="node1" title="Erases the game menu using a black rectangle." alt="" coords="5,5,91,32"/>
+<area shape="rect" id="node2" href="$graphics_8c.html#a4a4da84a32858d16b1ed46cb39579e7d" title="Draws a rectangle." alt="" coords="139,5,247,32"/>
+<area shape="rect" id="node3" href="$graphics_8c.html#a2b65762e404f315db91ba476fc300cc8" title="Draws a horizontal line." alt="" coords="295,5,433,32"/>
+</map>

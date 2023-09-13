@@ -1,0 +1,5 @@
+<map id="drawMenu" name="drawMenu">
+<area shape="rect" id="node1" title="Draws the initial game menu." alt="" coords="178,31,258,57"/>
+<area shape="rect" id="node2" href="$mouse_controller_8c.html#a81d968a656158595c4d1d84afd86dc06" title="Checks if there&#39;s a mouse click over the back to menu option and if so, display the corresponding res..." alt="" coords="5,5,130,32"/>
+<area shape="rect" id="node3" href="$proj_8c.html#ac21b28e5cea6738dcc3c5601ead3eb1f" title=" " alt="" coords="25,56,110,83"/>
+</map>

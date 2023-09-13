@@ -1,0 +1,5 @@
+<map id="drawTitle" name="drawTitle">
+<area shape="rect" id="node1" title="Draws &quot;PACMAN&quot; word in the initial game menu." alt="" coords="139,31,211,57"/>
+<area shape="rect" id="node2" href="$mouse_controller_8c.html#a057eff918397c32dd7d8354d7f952bac" title="Checks if there&#39;s a mouse clicked over any menu option and if so, display the corresponding result." alt="" coords="5,5,91,32"/>
+<area shape="rect" id="node3" href="$menu__view_8c.html#a5fd0c469e6f02d84c080f7cf71630109" title="Draws the initial game menu." alt="" coords="8,56,88,83"/>
+</map>

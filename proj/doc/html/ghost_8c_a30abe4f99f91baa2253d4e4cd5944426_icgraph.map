@@ -1,0 +1,5 @@
+<map id="set_orange_position" name="set_orange_position">
+<area shape="rect" id="node1" title="Set the initial position of the orange ghost." alt="" coords="349,5,486,32"/>
+<area shape="rect" id="node2" href="$ghost_8c.html#a3089145bcb0081ac61e135de99a24927" title="Set the initial position of all ghosts." alt="" coords="157,5,301,32"/>
+<area shape="rect" id="node3" href="$game_controller_8c.html#a87b3f0169a99921c919691956ebf5e20" title="Initializes the game by setting the game elements to their initial positions, loading the pixmaps and..." alt="" coords="5,5,109,32"/>
+</map>

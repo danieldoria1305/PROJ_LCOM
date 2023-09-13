@@ -1,0 +1,5 @@
+<map id="movePacman" name="movePacman">
+<area shape="rect" id="node1" title=" " alt="" coords="272,5,371,32"/>
+<area shape="rect" id="node2" href="$keyboard_controller_8c.html#a4c564e6d4f6e82a9ea8d82d0251bad15" title="Handles the keyboard input, updating the game state and pacman&#39;s position accordingly." alt="" coords="138,5,224,32"/>
+<area shape="rect" id="node3" href="$proj_8c.html#a649a26d3c9953d9f2af863e859e0c40d" title=" " alt="" coords="5,5,90,32"/>
+</map>

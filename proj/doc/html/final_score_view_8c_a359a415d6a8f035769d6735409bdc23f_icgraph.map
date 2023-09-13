@@ -1,0 +1,5 @@
+<map id="getNumbers" name="getNumbers">
+<area shape="rect" id="node1" title="Gets the xpm of the number passed as argument." alt="" coords="342,5,433,32"/>
+<area shape="rect" id="node2" href="$final_score_view_8c.html#a01e517e5012ba95dd866bbd2efcadd62" title="Draws the user&#39;s final score." alt="" coords="150,5,294,32"/>
+<area shape="rect" id="node3" href="$menu__view_8c.html#a74f35d1849fb4d2e376f8a6401341925" title="Draws win menu (&quot;Game Over&quot;, &quot;score&quot; and the points) when the the user loses." alt="" coords="5,5,102,32"/>
+</map>

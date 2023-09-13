@@ -1,0 +1,5 @@
+<map id="to_binary" name="to_binary">
+<area shape="rect" id="node1" title="Converts a Binary Coded Decimal (BCD) number to binary representation." alt="" coords="168,31,242,57"/>
+<area shape="rect" id="node2" href="$rtc_8c.html#a94b0c84824555e206801ea5a59eaa8fb" title="Retrieves the current hour from the RTC." alt="" coords="16,5,109,32"/>
+<area shape="rect" id="node3" href="$rtc_8c.html#ae22bdeb51eb630e1d579dfc1cd1b2f11" title="Updates the time information by reading the current values from the RTC." alt="" coords="5,56,120,83"/>
+</map>

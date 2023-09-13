@@ -1,0 +1,5 @@
+<map id="drawWin" name="drawWin">
+<area shape="rect" id="node1" title="Draws &quot;WIN&quot; word when the game ends." alt="" coords="5,5,77,32"/>
+<area shape="rect" id="node2" href="$graphics_8c.html#aed4db1962e2d6dfa0a4a2c72b06ea949" title="Draws a XPM." alt="" coords="125,5,205,32"/>
+<area shape="rect" id="node3" href="$graphics_8c.html#a59d8c6a919eef84d238f6c8d5bd66ff8" title="Draws a pixel." alt="" coords="253,5,335,32"/>
+</map>

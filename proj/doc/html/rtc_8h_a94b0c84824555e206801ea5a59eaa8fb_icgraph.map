@@ -1,0 +1,5 @@
+<map id="rtc_get_hour" name="rtc_get_hour">
+<area shape="rect" id="node1" title="Retrieves the current hour from the RTC." alt="" coords="306,5,399,32"/>
+<area shape="rect" id="node2" href="$menu__view_8c.html#a5fd0c469e6f02d84c080f7cf71630109" title="Draws the initial game menu." alt="" coords="178,5,258,32"/>
+<area shape="rect" id="node3" href="$mouse_controller_8c.html#a81d968a656158595c4d1d84afd86dc06" title="Checks if there&#39;s a mouse click over the back to menu option and if so, display the corresponding res..." alt="" coords="5,5,130,32"/>
+</map>
