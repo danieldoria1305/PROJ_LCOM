@@ -1,5 +1,0 @@
-<map id="drawLose" name="drawLose">
-<area shape="rect" id="node1" title="Draws &quot;GAME OVER&quot; word when the game ends." alt="" coords="306,5,382,32"/>
-<area shape="rect" id="node2" href="$menu__view_8c.html#a74f35d1849fb4d2e376f8a6401341925" title="Draws win menu (&quot;Game Over&quot;, &quot;score&quot; and the points) when the the user loses." alt="" coords="162,5,258,32"/>
-<area shape="rect" id="node3" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,114,32"/>
-</map>

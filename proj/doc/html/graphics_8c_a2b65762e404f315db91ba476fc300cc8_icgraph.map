@@ -1,5 +1,0 @@
-<map id="draw_horizontal_line" name="draw_horizontal_line">
-<area shape="rect" id="node1" title="Draws a horizontal line." alt="" coords="334,5,472,32"/>
-<area shape="rect" id="node2" href="$graphics_8c.html#a4a4da84a32858d16b1ed46cb39579e7d" title="Draws a rectangle." alt="" coords="178,5,286,32"/>
-<area shape="rect" id="node3" href="$mouse_controller_8c.html#a81d968a656158595c4d1d84afd86dc06" title="Checks if there&#39;s a mouse click over the back to menu option and if so, display the corresponding res..." alt="" coords="5,5,130,32"/>
-</map>

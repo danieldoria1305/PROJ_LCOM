@@ -1,5 +1,0 @@
-<map id="drawMouse" name="drawMouse">
-<area shape="rect" id="node1" title="Draws the mouse." alt="" coords="5,5,93,32"/>
-<area shape="rect" id="node2" href="$graphics_8c.html#aed4db1962e2d6dfa0a4a2c72b06ea949" title="Draws a XPM." alt="" coords="141,5,221,32"/>
-<area shape="rect" id="node3" href="$graphics_8c.html#a59d8c6a919eef84d238f6c8d5bd66ff8" title="Draws a pixel." alt="" coords="269,5,351,32"/>
-</map>

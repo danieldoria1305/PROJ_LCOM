@@ -1,5 +1,0 @@
-<map id="moveUp" name="moveUp">
-<area shape="rect" id="node1" title="Moves ghost up one step." alt="" coords="287,5,354,32"/>
-<area shape="rect" id="node2" href="$ghosts_controller_8c.html#ac3330909b367700a0ecd05296a3ea0e2" title="Tries to move ghost to a given position." alt="" coords="163,5,239,32"/>
-<area shape="rect" id="node3" href="$ghosts_controller_8c.html#a52c71fa30a4dd670cd157c68a3b4f917" title="Strategy for first ghost: Move to a position ahead of Pacman." alt="" coords="5,5,115,32"/>
-</map>

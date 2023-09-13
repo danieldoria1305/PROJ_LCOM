@@ -1,5 +1,0 @@
-<map id="drawScoreNums" name="drawScoreNums">
-<area shape="rect" id="node1" title="Draws the user&#39;s score." alt="" coords="5,31,122,57"/>
-<area shape="rect" id="node2" href="$graphics_8c.html#aed4db1962e2d6dfa0a4a2c72b06ea949" title="Draws a XPM." alt="" coords="170,5,250,32"/>
-<area shape="rect" id="node3" href="$score_view_8c.html#a6ee56d2fc36f2a9e91792dfed7ee0f98" title="Gets the xpm of the number passed as argument." alt="" coords="177,56,243,83"/>
-</map>

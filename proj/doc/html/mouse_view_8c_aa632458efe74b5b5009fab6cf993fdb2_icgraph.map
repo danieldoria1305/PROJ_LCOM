@@ -1,5 +1,0 @@
-<map id="drawMouse" name="drawMouse">
-<area shape="rect" id="node1" title="Draws the mouse." alt="" coords="161,31,248,57"/>
-<area shape="rect" id="node2" href="$menu__view_8c.html#a5fd0c469e6f02d84c080f7cf71630109" title="Draws the initial game menu." alt="" coords="19,5,99,32"/>
-<area shape="rect" id="node3" href="$mouse_controller_8c.html#a8d54bad73de6290c0978f69ae262ec43" title="Checks if the mouse is over any menu option." alt="" coords="5,56,113,83"/>
-</map>

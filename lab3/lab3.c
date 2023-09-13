@@ -1,18 +1,9 @@
 #include <lcom/lcf.h>
 #include <lcom/lab3.h>
-
 #include <stdbool.h>
 #include <stdint.h>
-
-#include "i8254.h"
-#include "i8042.h"
 #include "keyboard.h"
-#include "KBC.c"
-#include "timer.c"
-
-extern uint32_t counter_KBC;
-extern int timer_counter;
-extern uint8_t scancode;
+#include "i8042.h"
 
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)
@@ -39,97 +30,163 @@ int main(int argc, char *argv[]) {
 }
 
 
+extern uint32_t cnt;
+extern int counter, return_value;
+extern uint8_t scancode;
+
 int(kbd_test_scan)() {
-
-    int ipc_status;
-    uint8_t irqset;
-    message msg;
-
-    if(keyboard_subscribe_interrupts(&irqset) != 0){
-        printf("Error subscribing timer\n");
-        return 1;
-    } 
-
-    while(scancode != BREAK_ESC){
-
-        if( driver_receive(ANY, &msg, &ipc_status) != 0 ){
-            printf("Error");
-            continue;
-        }
-
-        if(is_ipc_notify(ipc_status)) {
-            switch(_ENDPOINT_P(msg.m_source)){
-                 case HARDWARE:
-                    if (msg.m_notify.interrupts & irqset) {
-                        kbc_ih();
-                        kbd_print_scancode(!(scancode & MAKE_CODE), scancode == TWO_BYTES ? 2 : 1, &scancode);
-                    }
-            }
-        }
-    }
-
-  if (keyboard_unsubscribe_interrupts() != 0) return 1;
-  if (kbd_print_no_sysinb(counter_KBC) != 0) return 1;
-
-  return 0;
-}
-
-int(kbd_test_poll)() {
-  
-    while (scancode != BREAK_ESC) { 
-
-        if (read_KBC_output(KBC_OUT_CMD, &scancode, 0) == 0) {
-            kbd_print_scancode(!(scancode & MAKE_CODE), scancode == TWO_BYTES ? 2 : 1, &scancode);
-        }   
-    }
-
-  return keyboard_restore();
-}
-
-int(kbd_test_timed_scan)(uint8_t n) {
-
-    int ipc_status;
-    uint8_t irq_set_TIMER, irq_set_KBC;
-    message msg;
-
-    int secs = 0; 
-
-    if (timer_subscribe_int(&irq_set_TIMER) != 0) { 
-        printf("Error subscribing timer\n");
-        return 1;
-    }
-    if (keyboard_subscribe_interrupts(&irq_set_KBC) != 0) {
+  uint8_t bit_no;
+  if (keyboard_subscribe_interrupts(&bit_no) != 0){
     printf("Error subscribing keyboard\n");
     return 1;
   }
 
-    while (scancode != BREAK_ESC && secs < n){
+  uint8_t packet[2];
 
-        if( driver_receive(ANY, &msg, &ipc_status) != 0 ){
-            printf("Error");
-            continue;
-        }
+  int ipc_status, r, i=0;
+  message msg;
 
-        if(is_ipc_notify(ipc_status)) {
-            switch(_ENDPOINT_P(msg.m_source)){
-                 case HARDWARE:
-                    if (msg.m_notify.interrupts & irq_set_KBC) {
-                        kbc_ih();
-                        kbd_print_scancode(!(scancode & MAKE_CODE), scancode == TWO_BYTES ? 2 : 1, &scancode);
-                        secs = 0;
-                        timer_counter = 0;
-                    }
-                    if (msg.m_notify.interrupts & irq_set_TIMER) {
-                        timer_int_handler();
-                        if (timer_counter % 60 == 0) secs++;
-                    }
-            }
-        }
+  while(scancode != BREAK_ESC) {
+    if((r = driver_receive(ANY, &msg, &ipc_status)) != 0) {
+      printf("driver_receive failed with: %d", r);
+      continue;
     }
 
-  if (timer_unsubscribe_int() != 0) return 1;
-  if (keyboard_unsubscribe_interrupts() != 0) return 1;
-  if (kbd_print_no_sysinb(counter_KBC) != 0) return 1;
+    if (is_ipc_notify(ipc_status)) {
+      switch (_ENDPOINT_P(msg.m_source)) {
+        case HARDWARE:
+          if (msg.m_notify.interrupts & BIT(bit_no)) {
+            kbc_ih();
+
+            if (return_value == 0) {
+              packet[i] = scancode;
+
+              if (scancode == TWO_BYTES) {
+                i++;
+              }
+              else {
+                if (kbd_print_scancode(!(scancode & MAKE_CODE), i + 1, packet) != 0) return 1;
+                i = 0;
+              }
+            }
+          }
+          break;
+        default:
+          break;
+      }
+    }
+  }
+
+  if (keyboard_unsubscribe_interrupts() != 0) {
+    printf("Error unsubscribing keyboard\n");
+    return 1;
+  }
+
+  if (kbd_print_no_sysinb(cnt) != 0) {
+    printf("Failed kbd_print_no_sysinb\n");
+    return 1;
+  }
+  return 0;
+}
+
+int(kbd_test_poll)() {
+
+  uint8_t packet[2];
+  int i = 0;
+
+  while(scancode != BREAK_ESC) {
+    kbc_ih();
+
+    if (return_value == 0) {
+      if(read_KBC_output(KBC_OUT_CMD, &scancode) != 0) continue;
+
+      packet[i] = scancode;
+
+      if (scancode == TWO_BYTES) {
+        i++;
+      }
+      else {
+        if (kbd_print_scancode(!(scancode & MAKE_CODE), i + 1, packet) != 0) return 1;
+        i = 0;
+      }
+    }
+  }
+
+  if(keyboard_restore() != 0){
+    printf("Error restoring keyboard\n");
+    return 1;
+  }
+
+  if (kbd_print_no_sysinb(cnt) != 0) {
+    printf("Failed kbd_print_no_sysinb\n");
+    return 1;
+  }
+
+  return 0;
+}
+
+int(kbd_test_timed_scan)(uint8_t n) {
+  uint8_t kb_bit_no, timer_bit_no;
+
+  if (keyboard_subscribe_interrupts(&kb_bit_no) != 0) {
+    printf("Error subscribing keyboard\n");
+    return 1;
+  }
+  if (timer_subscribe_int(&timer_bit_no) != 0) {
+    printf("Error subscribing timer\n");
+    return 1;
+  }
+
+  counter = 0;
+  uint8_t packet[2];
+  int ipc_status, r, i = 0, max_counter = n * sys_hz();
+  message msg;
+
+  while((scancode != BREAK_ESC) && (counter < max_counter)) {
+    if((r = driver_receive(ANY, &msg, &ipc_status)) != 0) {
+      printf("driver_receive failed with: %d", r);
+      continue;
+    }
+
+    if (is_ipc_notify(ipc_status)) {
+      switch (_ENDPOINT_P(msg.m_source)) {
+        case HARDWARE:
+          if (msg.m_notify.interrupts & BIT(timer_bit_no)) {
+            timer_int_handler();
+          }
+          if (msg.m_notify.interrupts & BIT(kb_bit_no)) {
+            counter = 0;
+            
+            kbc_ih();
+
+            if (return_value == 0) {
+              packet[i] = scancode;
+
+              if (scancode == TWO_BYTES) {
+                i++;
+              }
+              else {
+                if (kbd_print_scancode(!(scancode & MAKE_CODE), i + 1, packet) != 0) return 1;
+                i = 0;
+              }
+            }
+          }
+          break;
+        default:
+          break;
+      }
+    }
+  }
+
+  if (keyboard_unsubscribe_interrupts() != 0) {
+    printf("Error unsubscribing keyboard\n");
+    return 1;
+  }
+
+  if (timer_unsubscribe_int() != 0) {
+    printf("Error unsubscribing timer\n");
+    return 1;
+  }
 
   return 0;
 }

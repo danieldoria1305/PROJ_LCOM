@@ -1,5 +1,0 @@
-<map id="drawTimer" name="drawTimer">
-<area shape="rect" id="node1" title="Draws the timer." alt="" coords="5,31,86,57"/>
-<area shape="rect" id="node2" href="$graphics_8c.html#aed4db1962e2d6dfa0a4a2c72b06ea949" title="Draws a XPM." alt="" coords="137,5,217,32"/>
-<area shape="rect" id="node3" href="$timer_view_8c.html#ae68c526c986d69f7b8e8a7a14b18fc8b" title="Gets the xpm of the number passed as argument." alt="" coords="134,56,220,83"/>
-</map>

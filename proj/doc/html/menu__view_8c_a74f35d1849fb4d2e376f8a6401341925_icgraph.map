@@ -1,4 +1,0 @@
-<map id="drawYouLost" name="drawYouLost">
-<area shape="rect" id="node1" title="Draws win menu (&quot;Game Over&quot;, &quot;score&quot; and the points) when the the user loses." alt="" coords="162,5,258,32"/>
-<area shape="rect" id="node2" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,114,32"/>
-</map>

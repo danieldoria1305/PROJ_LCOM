@@ -1,5 +1,0 @@
-<map id="rtc_get_hour" name="rtc_get_hour">
-<area shape="rect" id="node1" title="Retrieves the current hour from the RTC." alt="" coords="5,31,99,57"/>
-<area shape="rect" id="node2" href="$rtc_8c.html#a8e4030507a3afad53e5b80851f90d193" title="Sends a command to the RTC and retrieves the output value." alt="" coords="147,5,226,32"/>
-<area shape="rect" id="node3" href="$rtc_8c.html#a891509fed13e0cac396e9c401f887d72" title="Converts a Binary Coded Decimal (BCD) number to binary representation." alt="" coords="149,56,224,83"/>
-</map>

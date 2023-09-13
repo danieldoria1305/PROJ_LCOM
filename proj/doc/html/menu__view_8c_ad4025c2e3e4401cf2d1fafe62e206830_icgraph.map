@@ -1,5 +1,0 @@
-<map id="drawGameDescription" name="drawGameDescription">
-<area shape="rect" id="node1" title="Draws &quot;RULES&quot; option in the initial game menu." alt="" coords="135,31,283,57"/>
-<area shape="rect" id="node2" href="$mouse_controller_8c.html#a330cd6ebe2e6002d1da675afedf404a6" title="Checks if there&#39;s a mouse click over the rules option and if so, display the corresponding result." alt="" coords="5,5,87,32"/>
-<area shape="rect" id="node3" href="$menu__view_8c.html#a5fd0c469e6f02d84c080f7cf71630109" title="Draws the initial game menu." alt="" coords="6,56,86,83"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="rtc_setup" name="rtc_setup">
-<area shape="rect" id="node1" title="Sets up the RTC by initializing the binary mode and updating the time information." alt="" coords="5,31,81,57"/>
-<area shape="rect" id="node2" href="$rtc_8c.html#a5873dc86f56c4a2a8ea8f7faf07ef798" title="Checks if the RTC is in binary mode." alt="" coords="138,5,234,32"/>
-<area shape="rect" id="node3" href="$rtc_8c.html#ae22bdeb51eb630e1d579dfc1cd1b2f11" title="Updates the time information by reading the current values from the RTC." alt="" coords="129,56,243,83"/>
-</map>

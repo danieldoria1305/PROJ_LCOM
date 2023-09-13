@@ -1,5 +1,0 @@
-<map id="set_coins_positions" name="set_coins_positions">
-<area shape="rect" id="node1" title="Set the initial position of coins." alt="" coords="313,5,449,32"/>
-<area shape="rect" id="node2" href="$game_controller_8c.html#a87b3f0169a99921c919691956ebf5e20" title="Initializes the game by setting the game elements to their initial positions, loading the pixmaps and..." alt="" coords="162,5,265,32"/>
-<area shape="rect" id="node3" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,114,32"/>
-</map>

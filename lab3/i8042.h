@@ -2,6 +2,7 @@
 #define _LCOM_I8042_H_
 
 #define IRQ_KEYBOARD    1
+#define IRQ_MOUSE 12
 
 #define BREAK_ESC       0x81
 #define MAKE_CODE       BIT(7)
@@ -10,10 +11,10 @@
 
 #define TIMEOUT_ERROR   BIT(6)
 #define PARITY_ERROR    BIT(7)
-#define AUX             BIT(5)
 #define FULL_OUT_BUFFER BIT(0)
 #define FULL_IN_BUFFER  BIT(1)
 
+#define KBC_WRITE_AUX_DEV_CMD 0xD4
 #define KBC_STATUS_REG  0x64
 #define KBC_IN_CMD      0x64
 #define KBC_OUT_CMD     0x60

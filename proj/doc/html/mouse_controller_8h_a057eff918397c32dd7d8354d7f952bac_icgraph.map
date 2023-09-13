@@ -1,5 +1,0 @@
-<map id="clickCheck" name="clickCheck">
-<area shape="rect" id="node1" title="Checks if there&#39;s a mouse clicked over any menu option and if so, display the corresponding result." alt="" coords="360,5,445,32"/>
-<area shape="rect" id="node2" href="$mouse_controller_8c.html#a8d54bad73de6290c0978f69ae262ec43" title="Checks if the mouse is over any menu option." alt="" coords="205,5,312,32"/>
-<area shape="rect" id="node3" href="$mouse_controller_8c.html#aa0d5baa6f8a589a479c980fe9c0450ac" title="Mouse interrupt handler." alt="" coords="5,5,157,32"/>
-</map>

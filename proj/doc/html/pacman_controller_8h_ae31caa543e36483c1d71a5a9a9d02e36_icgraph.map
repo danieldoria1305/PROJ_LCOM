@@ -1,5 +1,0 @@
-<map id="moveU" name="moveU">
-<area shape="rect" id="node1" title="Moves pacman up one step." alt="" coords="287,5,347,32"/>
-<area shape="rect" id="node2" href="$pacman_controller_8c.html#a7afdd1b1aab480f8b2501182e1bf3f31" title=" " alt="" coords="140,5,239,32"/>
-<area shape="rect" id="node3" href="$keyboard_controller_8c.html#a4c564e6d4f6e82a9ea8d82d0251bad15" title="Handles the keyboard input, updating the game state and pacman&#39;s position accordingly." alt="" coords="5,5,92,32"/>
-</map>

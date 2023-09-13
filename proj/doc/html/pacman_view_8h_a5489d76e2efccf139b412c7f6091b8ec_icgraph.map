@@ -1,5 +1,0 @@
-<map id="drawPacman" name="drawPacman">
-<area shape="rect" id="node1" title="Draws pacman." alt="" coords="326,31,422,57"/>
-<area shape="rect" id="node2" href="$pixmaps_8c.html#a5f9261640c49a86b8911a94aebd5f10c" title="Draws all the game elements." alt="" coords="140,5,278,32"/>
-<area shape="rect" id="node3" href="$keyboard_controller_8c.html#a4c564e6d4f6e82a9ea8d82d0251bad15" title="Handles the keyboard input, updating the game state and pacman&#39;s position accordingly." alt="" coords="5,31,92,57"/>
-</map>
